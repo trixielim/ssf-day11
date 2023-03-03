@@ -12,7 +12,10 @@
     <h2 data-th-text = "${currHour}"></h2>
 
     <div data-th-if="$(currHour le 12}">
-        <span>Good Afternoon</span> 
+        <span>Good Morning</span>
+    </div>
+    <div data-th-if="${currHour gt 12}">
+        <span>Good Afternoon</span>
     </div>
 
     <table>
